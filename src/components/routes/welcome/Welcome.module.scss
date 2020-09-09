@@ -1,0 +1,146 @@
+.section_welcome_background {
+    min-height: 100vh;
+    width: 100%;
+    background: url("../../../media/photo/music.jpg");
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.center_piece {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    p {
+        font-size: 4.25rem;
+        letter-spacing: 0.44px;
+        color: whitesmoke;
+        font-family: "Rubik";
+    }
+}
+
+.box {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    span {
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-bottom: 1px solid #fff;
+        border-right: 1px solid #fff;
+        transform: rotate(45deg);
+        animation: animate 2s infinite;
+        margin: -10px;
+    }
+}
+.box span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.box span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
+.section_projects {
+    height: 1000px;
+    padding: 20px 0 20px 0;
+    background-color: #022b50;
+    position: relative;
+    .title_container {
+        display: flex;
+        position: relative;
+        width: 280px;
+        margin: auto;
+        justify-content: center;
+        padding-top: 45px;
+        .title_block {
+            display: inline-block;
+            position: relative;
+            h2 {
+                font-size: 2.25rem;
+                color: whitesmoke;
+                text-transform: uppercase;
+                line-height: 1.2;
+                letter-spacing: 5px;
+                font-family: "Karma Semibold";
+                position: relative;
+            }
+        }
+    }
+    .title_block::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 0.575rem;
+        background: #ff5252;
+        bottom: 2.575rem;
+        left: 0;
+    }
+
+    .project_container {
+        display: block;
+        position: relative;
+        .step {
+            margin: 12px;
+            display: flex;
+            flex-direction: row;
+            .step_text {
+                order: -1;
+                flex-basis: 15rem;
+                padding: 6rem;
+                background-color: whitesmoke;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                border-radius: 3px;
+                align-items: center;
+                font-family: "Muli Medium";
+            }
+            .img {
+                flex: 1;
+                height: 100%;
+                overflow: hidden;
+                img {
+                    border-radius: 3px;
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+.section_aboutMe {
+    height: 750px;
+    width: 100%;
+    background-color: #ff5252;
+}
+
+.button_wrapper {
+    display: flex;
+    justify-content: center;
+}

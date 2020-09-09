@@ -1,0 +1,82 @@
+@import "../../../style/_fonts";
+@import "../../../style/_variables";
+
+.wrapper {
+    position: relative;
+}
+
+.menu_links {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 200px;
+    ul {
+        padding: 0;
+        margin: 0;
+        li {
+            font-family: "Muli Bold";
+            font-size: 4.25rem;
+            padding: 15px;
+            list-style: none;
+            font-weight: 700;
+            height: 140px;
+            overflow: hidden;
+            position: relative;
+            width: 700px;
+            letter-spacing: 0.3rem;
+            a {
+                position: absolute;
+                color: #fff;
+                text-decoration: none;
+                &:hover {
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+.info {
+    width: 300px;
+    color: #fff;
+    margin: auto 0;
+    h3 {
+        font-size: 1.3rem;
+        margin: 8px auto;
+    }
+    p {
+        font-size: 1rem;
+        font-family: "Karma Semibold";
+        font-weight: 700;
+        margin: 0 auto;
+    }
+}
+
+.hamburger_menu {
+    display: none;
+    z-index: 9;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    .menu_secondary_background_color {
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background: black;
+    }
+    .menu_layer {
+        position: relative;
+        background: darkorange;
+        overflow: hidden;
+        height: 100%;
+    }
+}

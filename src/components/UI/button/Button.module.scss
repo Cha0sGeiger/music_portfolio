@@ -1,0 +1,21 @@
+.button {
+    padding: 15px 30px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    font-family: "Muli Medium", sans-serif;
+    color: white;
+    background: #f00;
+    display: inline-block;
+    background: linear-gradient(to right, #f00 0%, #f00 50%, salmon 50%, salmon 100%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: background-position 0.3s;
+    outline: none;
+    border-radius: 0.56rem;
+    border: none;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    background-position: 0 0;
+}
